@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Remover</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo" class="logo-img"> <!-- Replace logo.png with your logo file -->
+            <span>PIX REMOVER</span>
+        </div>
+        <!-- Removed additional pages from the navigation bar -->
+    </nav>
+
+    <div class="hero-section">
+        <h1>Remove Image Backgrounds Instantly</h1>
+        <input type="file" id="upload" accept="image/*" style="display: none;">
+        <label for="upload" class="upload-btn">Upload Image</label>
+        <div id="image-preview" class="image-preview"></div>
+        <a id="download-link" class="download-btn" style="display: none;">Download Processed Image</a>
+        <div id="loading" class="loading-animation" style="display: none;">Processing...</div>
+    </div>
+
+    <div class="cards-section">
+        <div class="card">
+            <i class="fas fa-upload icon"></i>
+            <h2>Upload Image</h2>
+            <p>Upload your image to remove the background.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-magic icon"></i>
+            <h2>Remove Background</h2>
+            <p>Let our tool process and remove the background.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-download icon"></i>
+            <h2>Download Image</h2>
+            <p>Download your image with the background removed.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/1874sUQdj4/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://youtube.com/@mr.amirshahzad?si=RaALkgL0upj2zblC" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="tiktok.com/@maharamir5434" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
