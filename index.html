@@ -6,6 +6,30 @@
     <title>Background Remover</title>
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AdMob SDK -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID"
+     crossorigin="anonymous"></script>
+    <script>
+        // Initialize AdMob
+        document.addEventListener('DOMContentLoaded', function() {
+            // Banner Ad
+            var adContainer = document.createElement('div');
+            adContainer.innerHTML = `
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                     data-ad-slot="YOUR_AD_UNIT_ID"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                <\/script>
+            `;
+            document.body.insertBefore(adContainer, document.body.firstChild);
+            
+            // You can add more ad units as needed
+        });
+    </script>
 </head>
 <body>
     <nav class="navbar">
@@ -23,6 +47,19 @@
         <div id="image-preview" class="image-preview"></div>
         <a id="download-link" class="download-btn" style="display: none;">Download Processed Image</a>
         <div id="loading" class="loading-animation" style="display: none;">Processing...</div>
+        
+        <!-- AdMob Banner Ad -->
+        <div class="ad-container" style="margin: 20px auto; text-align: center;">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="YOUR_AD_UNIT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
     </div>
 
     <div class="cards-section">
